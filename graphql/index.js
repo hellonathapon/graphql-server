@@ -1,2 +1,4 @@
-export { default as schemas } from "./schemas";
-export { default as resolvers } from "./resolvers";
+module.exports = {
+  typeDefs: require("./schemas"),
+  resolvers: require("./resolvers"),
+};

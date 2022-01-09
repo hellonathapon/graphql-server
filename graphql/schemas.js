@@ -31,10 +31,10 @@ const typeDefs = gql`
     secondArmament: String
   }
   type Query {
-    getAllTanks: [Tank!]
-    getTank(name: String!): Tank
-    getTanksByCountry(name: String!): [Tank]
-    getTanksByType(name: String!): [Tank]
+    getAllTanks: [Tank!] # Expect all available data
+    getTank(name: String!): Tank #Filter specific tank
+    getTanksByCountry(name: String!): [Tank] # Filter by country
+    getTanksByType(name: String!): [Tank] # Filter by type
   }
   # type Mutation {
   # }
